@@ -44,7 +44,7 @@ Threat detected! Risk: 10/10
 
 - **Zero config** — Just your API key and you're scanning
 - **Fast** — Typical scan completes in < 10ms
-- **38+ threat patterns** — Prompt injection, data exfiltration, social engineering, jailbreaks
+- **42+ threat patterns** — Prompt injection, data exfiltration, social engineering, jailbreaks
 - **Pythonic API** — Dataclass results, custom exceptions, boolean checks
 - **Type hints** — Full type annotations for IDE support
 - **Lightweight** — Only dependency is `requests`
@@ -104,7 +104,7 @@ for finding in result.findings:
 ```python
 health = shield.health()
 print(health)
-# {'status': 'healthy', 'version': '1.0.0', 'patterns_count': 36}
+# {'status': 'healthy', 'version': '1.0.0', 'patterns_count': 42}
 ```
 
 ### View Usage Statistics
