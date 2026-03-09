@@ -7,7 +7,7 @@ name = "clawguard-shield"
 version = "0.1.0"
 description = "Python SDK for ClawGuard Shield — AI Agent Security Scanning API"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.8"
 authors = [
     {name = "Joerg Michno", email = "michno.jrg@gmail.com"},
@@ -16,7 +16,6 @@ keywords = ["security", "ai", "agents", "prompt-injection", "scanning", "api"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
