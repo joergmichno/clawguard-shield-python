@@ -5,7 +5,7 @@ A lightweight, zero-config Python client for the ClawGuard Shield API.
 """
 
 from dataclasses import dataclass, field
-from typing import List, Optional, Dict, Any
+from typing import Any
 import requests
 
 
@@ -60,7 +60,7 @@ class ScanResult:
     risk_score: int
     severity: str
     findings_count: int
-    findings: List[Finding] = field(default_factory=list)
+    findings: list[Finding] = field(default_factory=list)
     scan_time_ms: int = 0
 
     @property
@@ -180,7 +180,7 @@ class Shield:
             scan_time_ms=data.get("scan_time_ms", 0),
         )
 
-    def scan_batch(self, texts: List[str], source: str = "sdk") -> List[ScanResult]:
+    def scan_batch(self, texts: list[str], source: str = "sdk") -> list[ScanResult]:
         """Scan multiple texts. Convenience method that calls scan() for each.
 
         Args:
@@ -192,7 +192,7 @@ class Shield:
         """
         return [self.scan(text, source=source) for text in texts]
 
-    def health(self) -> Dict[str, Any]:
+    def health(self) -> dict[str, Any]:
         """Check API health status (no auth required).
 
         Returns:
@@ -205,7 +205,7 @@ class Shield:
         )
         return resp.json()
 
-    def patterns(self) -> Dict[str, Any]:
+    def patterns(self) -> dict[str, Any]:
         """List all detection patterns.
 
         Returns:
