@@ -275,10 +275,21 @@ Get your API usage statistics.
 
 Get your free API key at [prompttools.co/shield](https://prompttools.co/shield).
 
+## Examples
+
+See the [`examples/`](examples/) folder for ready-to-run integrations:
+
+- **[basic_scan.py](examples/basic_scan.py)** — Scan a single input
+- **[fastapi_middleware.py](examples/fastapi_middleware.py)** — FastAPI middleware that scans all request bodies
+- **[flask_middleware.py](examples/flask_middleware.py)** — Flask decorator for scanning routes
+- **[error_handling.py](examples/error_handling.py)** — Handle all error types gracefully
+
 ## Related Projects
 
 - [ClawGuard](https://github.com/joergmichno/clawguard) — Open-source security scanner (zero dependencies)
-- [ClawGuard Shield API](https://github.com/joergmichno/clawguard-shield) — The API server behind this SDK
+- [JavaScript SDK](https://github.com/joergmichno/clawguard-shield-js) — `npm install clawguard-shield`
+- [MCP Server](https://github.com/joergmichno/clawguard-mcp) — Claude Desktop / Cursor integration
+- [GitHub Action](https://github.com/joergmichno/clawguard-scan-action) — CI/CD scanning
 - [Prompt Lab](https://prompttools.co) — Interactive prompt injection playground
 
 ## License
