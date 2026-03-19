@@ -44,7 +44,7 @@ Threat detected! Risk: 10/10
 
 - **Zero config** — Just your API key and you're scanning
 - **Fast** — Typical scan completes in < 10ms
-- **42+ threat patterns** — Prompt injection, data exfiltration, social engineering, jailbreaks
+- **132 threat patterns** — Prompt injection, data exfiltration, social engineering, jailbreaks
 - **Pythonic API** — Dataclass results, custom exceptions, boolean checks
 - **Type hints** — Full type annotations for IDE support
 - **Lightweight** — Only dependency is `requests`
