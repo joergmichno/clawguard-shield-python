@@ -44,7 +44,7 @@ Threat detected! Risk: 10/10
 
 - **Zero config** — Just your API key and you're scanning
 - **Fast** — Typical scan completes in < 10ms
-- **132 threat patterns** — Prompt injection, data exfiltration, social engineering, jailbreaks
+- **225 threat patterns** — Prompt injection, data exfiltration, social engineering, jailbreaks
 - **Pythonic API** — Dataclass results, custom exceptions, boolean checks
 - **Type hints** — Full type annotations for IDE support
 - **Lightweight** — Only dependency is `requests`
@@ -104,7 +104,7 @@ for finding in result.findings:
 ```python
 health = shield.health()
 print(health)
-# {'status': 'healthy', 'version': '1.0.0', 'patterns_count': 42}
+# {'status': 'healthy', 'version': '1.0.0', 'patterns_count': 225}
 ```
 
 ### View Usage Statistics
@@ -267,11 +267,7 @@ Get your API usage statistics.
 
 ## Pricing
 
-| Tier | Price | Daily Scans | Max Text |
-|------|-------|-------------|----------|
-| Free | $0/mo | 100 | 5,000 chars |
-| Pro | $9/mo | 10,000 | 50,000 chars |
-| Enterprise | $49/mo | Unlimited | 500,000 chars |
+Free tier includes 100 scans/day, no credit card required. For current Pro and Enterprise plans, see [prompttools.co/shield](https://prompttools.co/shield).
 
 Get your free API key at [prompttools.co/shield](https://prompttools.co/shield).
 
